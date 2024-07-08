@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is from HTML</h1>
+<a href={% url 'results' %}>click</a>
+<br></br>
+<form action={% url 'results' %}>
+    {% csrf_token %}
+    <input type="text" name="user_name">
+    <br></br>
+    <input type="text" name="age">
+    <br></br>
+    <input type="submit" name="submit">
+</form>
+</body>
+</html>
